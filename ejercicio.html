@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Validación</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <h1>Validación</h1>
+      </div>
+      <div class="container-body">
+        <fieldset>
+          <legend>Validación</legend>
+          <form action="formularios.html" method="post" name="validacion">
+            <label for="fecha">Fecha</label>
+            <input
+              type="text"
+              name="fecha"
+              id="fecha"
+              placeholder="dd/mm/AA"
+              required
+              pattern="(0[1-9]|1[0-9]|2[0-9]|3[0-1])-(0[1-9]|1[0-2])-\d{2}|(0[1-9]|1[0-9]|2[0-9]|3[0-1])/(0[1-9]|1[0-2])/\d{2}"
+            />
+            <input type="submit" value="Enviar" />
+          </form>
+        </fieldset>
+      </div>
+      <div class="container-footer"></div>
+    </div>
+  </body>
+</html>
