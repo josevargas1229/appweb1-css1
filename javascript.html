@@ -17,18 +17,36 @@
       <div class="container-body">
         <h2>Calculadora...</h2>
         <p>
-          <input type="number" name="v1" id="v1" placeholder="Valor 1" onblur="captura1()"/>
+          <input
+            type="number"
+            name="v1"
+            id="v1"
+            placeholder="Valor 1"
+            onblur="captura1()"
+          />
         </p>
         <p>
-          <input type="number" name="v2" id="v2" placeholder="Valor 2" onblur="captura2()"/>
+          <input
+            type="number"
+            name="v2"
+            id="v2"
+            placeholder="Valor 2"
+            onblur="captura2()"
+          />
         </p>
-        <input type="button" value="+" onclick="sum()" />
-        <input type="button" value="-" onclick="resta()" />
-        <input type="button" value="*" onclick="multiplicacion()" />
-        <input type="button" value="/" onclick="division()" />
-        <h2 id="resultado">El resultado de la... es:...</h2>
+        <div class="container-body-button">
+          <input type="button" value="+" onclick="sum()" />
+          <input type="button" value="-" onclick="resta()" />
+          <input type="button" value="*" onclick="multiplicacion()" />
+          <input type="button" value="/" onclick="division()" />
+          <input type="button" value="&#9003;" onclick="eliminar()">
+          <input type="button" value="C" onclick="eliminarTodo()">
+        </div>
+        <div id="resultados">
+          <h2 id="resultado">El resultado de la... es:...</h2>
+        </div>
       </div>
-      <div class="container-footer">
+      <div class="container-footer" id="js">
         <h2>footer</h2>
         <img src="src/CSS3_logo.svg.png" alt="yo" />
       </div>
