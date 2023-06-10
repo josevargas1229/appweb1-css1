@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica JS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/triangulo.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <h1>Practica JS</h1>
+        <img src="src/CSS3_logo.svg.png" alt="Yo" />
+      </div>
+      <div class="container-body">
+        <h2>Calculadora...</h2>
+        <div class="container-body-usuario">
+            <div class="container-body-usuario-datos">
+                <p>
+                    <input
+                      type="number"
+                      name="l1"
+                      id="l1"
+                      placeholder="Lado 1"
+                      onblur="captura1()"
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="number"
+                      name="l2"
+                      id="l2"
+                      placeholder="Lado 2"
+                      onblur="captura2()"
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="number"
+                      name="l3"
+                      id="l3"
+                      placeholder="Lado 3"
+                      onblur="captura3()"
+                    />
+                  </p>
+            </div>
+            <div class="container-body-usuario-button">
+                <input type="button" value="Área" onclick="ar()" />
+                <input type="button" value="Perimetro" onclick="peri()" />
+                <input type="button" value="Tipo" onclick="tip()" />
+                <input type="button" value="&#9003;" onclick="eliminar()">
+                <input type="button" value="C" onclick="eliminarTodo()">
+              </div>
+        </div>       
+        <div id="resultados">
+          
+        </div>
+      </div>
+      <div class="container-footer" id="js">
+        <h2>footer</h2>
+        <img src="src/CSS3_logo.svg.png" alt="yo" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -5,6 +5,7 @@ var v1 = 0,
   resul,
   texto,
   cantidad = 0;
+  
 
 function captura1() {
   v1 = document.getElementById("v1").value;

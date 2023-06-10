@@ -28,6 +28,13 @@ body{
             display: flex;
             justify-content: space-around;
         }
+        &-usuario{
+            display: flex;
+            flex-direction: row;
+            &-datos{
+                padding-right: 100px;
+            }
+        }
     }
     &-footer{
         position: relative;
