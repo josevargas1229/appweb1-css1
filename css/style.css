@@ -156,4 +156,14 @@ input[type=button] {
 
 #js {
   position: relative;
+}
+
+#convertido tr:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+#convertido td, #convertido tr {
+  border: none;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */

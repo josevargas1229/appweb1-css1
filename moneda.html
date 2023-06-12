@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/moneda.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <h1>Convertidor</h1>
+        <img src="src/CSS3_logo.svg.png" alt="Yo" />
+      </div>
+      <div class="container-body">
+        <h2>Convertidor...</h2>
+        <table id="convertido">
+          <tr>
+            <td><label for="tasa">Tasa de cambio del dolar</label></td>
+            <td><input
+              type="number"
+              name="tasa"
+              id="tasa"
+              placeholder="Precio del dolar"
+              step="0.01"
+            /></td>
+          </tr>
+          <tr>
+            <td><label for="peso">Peso mexicano</label></td>
+            <td><input
+              type="number"
+              name="peso"
+              id="peso"
+              placeholder="Peso"
+              step="0.01"
+            /></td>
+          </tr>
+          <tr>
+            <td><label for="dolar">Dólar estadounidense</label></td>
+            <td><input
+              type="number"
+              name="dolar"
+              id="dolar"
+              placeholder="Dólar"
+              step="0.01"
+            /></td>
+          </tr>
+        </table>
+        <div class="container-body-button">
+          <input type="button" value="Limpiar" id="limpiar">
+        </div>
+      </div>
+      <div class="container-footer" id="js">
+        <h2>footer</h2>
+        <img src="src/CSS3_logo.svg.png" alt="yo" />
+      </div>
+    </div>
+  </body>
+</html>
